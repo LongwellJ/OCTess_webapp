@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>OCTess - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../static/img/eye.svg" rel="icon">
+  <link href="../static/img/eye.svg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../static/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="../static/css/style.css" rel="stylesheet">
+  <script>
+  function countUp(start, end, duration, elementId) {
+    var range = end - start;
+    var current = start;
+    var increment = range / (duration * 1000);
+    var element = document.getElementById(elementId);
+
+    var timer = setInterval(function() {
+      current += increment;
+      element.textContent = current.toFixed(1);
+      if (current >= end) {
+        clearInterval(timer);
+      }
+    }, 1);
+  }
+
+</script>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="#hero"><span>OCTess</span></a></h1>
+        <!-- Uncomment for image logo -->
+        <!-- <a href="index.html"><img src="../static/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Usage</a></li>
+          <li><a class="nav-link scrollto" href="#team">Credits</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+          <div data-aos="zoom-out">
+            <h1>Welcome to <span>OCTess</span></h1>
+            <h2>An automated spectral domain optical coherence tomography data extraction tool</h2>
+            <div class="text-center text-lg-start">
+              <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+          <img src="../static/img/1909.i515.001_future_technology_isometric_set-16.jpg" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch" data-aos="fade-right">
+          </div>
+
+          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
+            <h3>About Our Tool</h3>
+            <p>Using an optical character recognition machine learning model, we developed and validated an algorithm for extracting macular optical coherence tomography data, yielding an accuracy comparable to a human extractor of 99.97% while being significantly more efficient.</p>
+
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon"><i class="bi bi-braces"></i></div>
+              <h4 class="title"><a href="">Purpose</a></h4>
+              <p class="description">Manual data extraction of spectral domain optical coherence tomography (SD-OCT) reports from large databases is a significant time- and resource-intensive process. To that end, we have created an optical character recognition (OCR) algorithm to automatically extract clinical and demographic data from Cirrus SD-OCT macular cube reports. Read our paper <a href="">here</a>! (pending approval)</p>
+            </div>
+
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon"><i class="bi bi-activity"></i></div>
+              <h4 class="title"><a href="https://github.com/MichaelBalas/OCTess">How it works</a></h4>
+              <p class="description">The Zeiss Cirrus 5000 and 6000 monocular PDF outputs are the only files that we accept. Demographic variables for extraction include the patient’s name, birthdate, laterality (left or right eye), SD-OCT scan date, and gender. Clinical variables for extraction include superior, central superior, nasal, central nasal, inferior, central inferior, temporal, central temporal and central macular thickness, average cube volume, average cube thickness, signal strength and foveal coordinates. Watch the video for a short demonstration. Read more about it <a href="https://github.com/MichaelBalas/OCTess"> here</a>!</p>
+            </div>
+
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-atom"></i></div>
+              <h4 class="title"><a href="https://github.com/tesseract-ocr/tesseract">Tesseract</a></h4>
+              <p class="description">Our algorithm utilizes an open-source OCR engine called Tesseract (pyTesseract version 0.3.9) to convert images to text. “OCTess” (i.e. portmanteau of OCT and Tesseract) was evaluated on two different Tesseract engines: one legacy version which works by recognizing character patterns and a newer, recurrent neural network-based OCR engine. Both engines are publicly available and have been developed by Google. Learn more about Tesseract <a href="https://github.com/tesseract-ocr/tesseract">here</a>!</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row" data-aos="fade-up">
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-alarm"></i>
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1.5" class="purecounter"></span>
+              <p>Seconds Per Document</p>
+            </div>
+          </div>
+          <body onload="countUp(0, 99.9, 0.4, 'counter');">
+            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+              <div class="count-box">
+                <i class="bi bi-percent"></i>
+                <span id="counter"></span>
+                <p>Percent Accuracy</p>
+              </div>
+            </div>
+          </body>
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="170" data-purecounter-duration="1.5" class="purecounter"></span>
+              <p>Second Improvment</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-calendar"></i>
+              <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1.5" class="purecounter"></span>
+              <p>Times Faster</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        
+        <div class="section-title" data-aos="fade-up">
+          <h2>Usage</h2>
+          <p style="color: antiquewhite;">Upload pngs and/or pdfs</p>
+        </div>
+        <section class="jumbotron text-center">
+
+        <div class="card">
+          <form action="/results" method="post" enctype="multipart/form-data">
+            <input type="file" name="Upload" id="Upload" style="color: #000;" accept="application/pdf, image/png" multiple>
+            <button type="submit" name="S2L" class="btn btn-primary my-2">Upload file</button>
+          </form>
+        </div>
+      </div>
+
+      
+      </section>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Credits</h2>
+          <p>Authors and Developers</p>
+        </div>
+
+        <div class="" data-aos="fade-left">
+        <p><strong> This web app is an implementation of <i>OCTess: An Optical Character Recognition Deep Learning Algorithm for Automated Data Extraction of Macular Cube Spectral Domain Optical Coherence tomography</i> (2023). Submitted to Ophthalmology Science</strong></p>
+        <br>
+        <p>Michael Balas, MD(C)<sup>1</sup>; Josh Herman, MD(C)<sup>1</sup>, Nishaant (Shaan) Bhambra, MD<sup>2</sup>, Jack Longwell, HBSc<sup>3</sup>, Marko M Popovic, MD, MPH(C)<sup>4</sup>, Isabela M Melo, MD<sup>4,5</sup>, Rajeev H Muni, MD, MSc<sup>4,5</sup></p>
+
+        <p>1 Temerty Faculty of Medicine, University of Toronto</p>
+
+        <p>2 Faculty of Medicine, McGill University</p> 
+          
+        <p>3 Department of Mathematics and Statistics, McMaster University</p>
+          
+        <p>4 Department of Ophthalmology & Vision Sciences, University of Toronto</p>
+          
+        <p>5 Department of Ophthalmology, St. Michael’s Hospital/Unity Health Toronto</p>
+        <br>
+        <br>
+        <p style="color: blue;"><strong> App developed by <a href="https://www.jacklongwell.ca">Jack Longwell</a></strong></p>
+        </div>
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>F.A.Q</h2>
+          <p>Frequently Asked Questions</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">What kind of document types are acceptable? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  The algorithm will accept both PDF and PNG files. Please note that Zeiss Cirrus 5000 and 6000 monocular PDF/PNG outputs are the only files that will work as intended. 
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">How does my extracted data get returned?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  All data is extracted via the OCTess algorithm and writted to an EXCEL spreadsheet. You will be able to download your extracted data after the algorithm has concluded.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">How long will it take to get my data extracted? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  You can expect the web app to take around 10 seconds per file that you upload. Please note that the majority of this time will be uploading your files to the worker.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">How many documents can I upload at once? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  This will depend on the size of your files and your internet's uploading speed. You should be able to upload 20+ at once. Any more will likely result in a timeout error.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+            <div class="info">
+
+              <div class="phone">
+                <i class="bi bi-person-circle"></i>
+                <h4>Name:</h4>
+                <p>Jack Longwell</p>
+              </div>
+              <br>
+              <br>
+
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>36 Queen St E, Toronto, ON M5B 1W8</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>longwelj@mcmaster.ca</p>
+              </div>
+
+            
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
+
+            <form action="https://formsubmit.co/longwelj@mcmaster.ca" method="post">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              
+              <div class="text-center"><button type="submit" class="btn btn-primary my-2">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    
+
+    <div class="container">
+      <div class="copyright">
+         Coded by: <strong><span><a href="https://jacklongwell.ca">Jack Longwell</a></span></strong>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../static/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../static/vendor/aos/aos.js"></script>
+  <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../static/vendor/php-email-form/validate.js"></script>
+
+
+  <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+  <!-- Template Main JS File -->
+  <script src="../static/js/main.js"></script>
+
+
+
+</body>
+
+</html>
