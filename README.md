@@ -1,5 +1,4 @@
-# OCTess_webapp
-Webapp code for www.octess.ca
+# Webapp code for www.octess.ca
 
 Implementation of OCTess: An Optical Character Recognition Algorithm for Automated Data Extraction of Spectral Domain Optical Coherence Tomography Reports
 
